@@ -1,0 +1,135 @@
+/* General Reset */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center; /* Center all text */
+}
+
+ul {
+    list-style-type: none; /* Removes bullets */
+    padding-left: 0; /* Removes default left padding */
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between columns */
+    flex-wrap: wrap; /* Ensures responsiveness */
+    margin: 20px 0;
+}
+
+/* Each section inside the flex container */
+.info-container section {
+    flex: 1; /* Makes all sections equally sized */
+    min-width: 250px; /* Prevents shrinking too much */
+}
+
+/* Work Experience in the middle */
+#workexp {
+    order: 2; /* Moves Work Experience to the center */
+}
+
+/* Dark Mode Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Sticky Ribbon Navigation */
+.ribbon {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    background-color: #42204381;
+    border-bottom: 2px solid #ff00cc;
+    z-index: 1000;
+}
+
+.ribbon a {
+    text-decoration: none;
+    font-size: 24px;
+    padding: 5px;
+    color: #ff00cc;
+    transition: transform 0.3s ease-in-out;
+}
+
+.ribbon a:hover {
+    transform: scale(1.2);
+    color: #ff00cc;
+}
+
+/* Banner Image */
+.banner {
+    display: block;
+    width: 90%; /* Ensures it's responsive */
+    max-width: 1200px; /* Optional: Prevents it from becoming too large */
+    height: auto;
+    max-height: 200px; /* Fixed max height */
+    aspect-ratio: 3 / 1; /* Ensures 3:1 crop ratio */
+    object-fit: cover; /* Crops image to fit the aspect ratio */
+    margin: 80px auto 20px auto; /* Centers the banner */
+    border-radius: 10px;
+}
+
+/* Section Styling */
+section {
+    background: #313031;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Section Titles */
+h2.divider {
+    border-bottom: 2px solid #ff00cc;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: #ff00cc;
+}
+
+/* Photoshop Image */
+.image-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.photoshop-img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 15px;
+}
+
+.arrow {
+    background-color: #ff00cc82;
+    color: black;
+    font-size: 24px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.arrow:hover {
+    background-color: #ffcc009c;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #222;
+    color: #ff00cc;
+    border-radius: 5px;
+}
