@@ -1,135 +1,116 @@
-/* General Reset */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-align: center; /* Center all text */
-}
-
-ul {
-    list-style-type: none; /* Removes bullets */
-    padding-left: 0; /* Removes default left padding */
-}
-
-.info-container {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Space between columns */
-    flex-wrap: wrap; /* Ensures responsiveness */
-    margin: 20px 0;
-}
-
-/* Each section inside the flex container */
-.info-container section {
-    flex: 1; /* Makes all sections equally sized */
-    min-width: 250px; /* Prevents shrinking too much */
-}
-
-/* Work Experience in the middle */
-#workexp {
-    order: 2; /* Moves Work Experience to the center */
-}
-
-/* Dark Mode Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #e0e0e0;
-    line-height: 1.6;
-    padding: 20px;
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+  margin: 0;
+  background: #f0f4f8;
 }
 
-/* Sticky Ribbon Navigation */
-.ribbon {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding: 10px;
-    background-color: #42204381;
-    border-bottom: 2px solid #ff00cc;
-    z-index: 1000;
+#timeInput {
+  display: none;
 }
 
-.ribbon a {
-    text-decoration: none;
-    font-size: 24px;
-    padding: 5px;
-    color: #ff00cc;
-    transition: transform 0.3s ease-in-out;
+#timeInput {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-family: sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
-.ribbon a:hover {
-    transform: scale(1.2);
-    color: #ff00cc;
+
+.subject-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
 }
 
-/* Banner Image */
-.banner {
-    display: block;
-    width: 90%; /* Ensures it's responsive */
-    max-width: 1200px; /* Optional: Prevents it from becoming too large */
-    height: auto;
-    max-height: 200px; /* Fixed max height */
-    aspect-ratio: 3 / 1; /* Ensures 3:1 crop ratio */
-    object-fit: cover; /* Crops image to fit the aspect ratio */
-    margin: 80px auto 20px auto; /* Centers the banner */
-    border-radius: 10px;
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Section Styling */
-section {
-    background: #313031;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 10px;
+h1 {
+  text-align: center;
 }
 
-/* Section Titles */
-h2.divider {
-    border-bottom: 2px solid #ff00cc;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-    color: #ff00cc;
+#question {
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 
-/* Photoshop Image */
-.image-slider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+textarea {
+  width: 100%;
+  font-family: monospace;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  resize: vertical;
 }
 
-.photoshop-img {
-    width: 100%;
-    max-width: 600px;
-    border-radius: 15px;
+button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.arrow {
-    background-color: #ff00cc82;
-    color: black;
-    font-size: 24px;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
-    transition: 0.3s;
+button:hover {
+  background-color: #0056b3;
 }
 
-.arrow:hover {
-    background-color: #ffcc009c;
+#feedback {
+  margin-top: 1rem;
+  font-weight: bold;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #222;
-    color: #ff00cc;
-    border-radius: 5px;
+
+
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
 }
+.top-bar button {
+  width: auto;
+  padding: 0.5rem 1rem;
+}
+
+
+#subjectInput {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  font-family: sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+#question {
+  font-family: "Calibri Light", Calibri, sans-serif;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-right: 3rem; /* creates space between question and icon */
+  flex-grow: 1;        /* allows it to take remaining space without pushing button */
+}
+
+    #answerInput,
+    #subjectInput,
+    #manualTimeInput,
+    #timeSelect {
+      font-family: Arial, sans-serif;
+      font-size: 16px;}
